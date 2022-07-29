@@ -1,0 +1,24 @@
+{
+  "name": "vercel-scratch-proxy",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Purpose-built proxy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Weredime/vercel-scratch-proxy.git"
+  },
+  "keywords": [],
+  "author": "Weredime",
+  "license": "GPL-3",
+  "bugs": {
+    "url": "https://github.com/Weredime/vercel-scratch-proxy/issues"
+  },
+  "homepage": "https://github.com/Weredime/vercel-scratch-proxy#readme",
+  "dependencies": {
+    "linkedom": "^0.14.12",
+    "node-fetch": "^3.2.9"
+  },
+  "devDependencies": {
+    "@vercel/node": "^2.5.1"
+  }
+}
