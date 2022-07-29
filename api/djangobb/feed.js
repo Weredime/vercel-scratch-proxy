@@ -8,13 +8,14 @@ import htmlToBB from "../../lib/html-to-bb.js";
  * @returns {void}
  */
 export default async function (req, res) {
-  const { forum = "31", accurateBB } = req.query;
+  const { f = "31", accurateBB } = req.query;
   const fetchAccurateBB = typeof accurateBB === "string";
-  const url = `https://scratch.mit.edu/discuss/feeds/forum/${forum}/`;
+  const url = `https://scratch.mit.edu/discuss/feeds/forum/${f}/`;
   const resp = await fetch(url);
   if (!resp.ok) {
+    res.status(resp.status);
     return res
-      .json({ error: "Could not fetch feed", status: resp.status })
+      .json({ error: "Could not fetch feed", type: "SCRATCH_ERROR" })
       .end();
   }
   const xml = await resp.text();
