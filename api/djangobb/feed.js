@@ -10,7 +10,7 @@ import htmlToBB from "../../lib/html-to-bb.js";
 export default async function (req, res) {
   const { f = "31", accurateBB } = req.query;
   const fetchAccurateBB = typeof accurateBB === "string";
-  const url = `https://scratch.mit.edu/discuss/feeds/forum/${f}/`;
+  const url = `https://scratch.mit.edu/discuss/feeds/forum/${f}/?t=${Date.now()}`;
   const resp = await fetch(url);
   if (!resp.ok) {
     res.status(resp.status);
