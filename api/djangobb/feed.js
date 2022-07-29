@@ -28,12 +28,14 @@ export default async function (req, res) {
       html: Buffer.from(post.querySelector("summary")?.textContent).toString(
         "utf-8"
       ),
-      bb: !fetchAccurateBB ? htmlToBB(
-        Buffer.from(post.querySelector("summary")?.textContent).toString(
-          "utf-8"
-        ),
-        document
-      ) : null,
+      bb: !fetchAccurateBB
+        ? htmlToBB(
+            Buffer.from(post.querySelector("summary")?.textContent).toString(
+              "utf-8"
+            ),
+            document
+          )
+        : null,
     },
     topic: {
       title: post
