@@ -18,7 +18,14 @@
     "linkedom": "^0.14.12",
     "node-fetch": "^3.2.9"
   },
+  "scripts": {
+    "start": "vercel dev",
+    "build:home": "node scripts/build_home_page.js"
+  },
   "devDependencies": {
-    "@vercel/node": "^2.5.1"
+    "@vercel/node": "^2.5.1",
+    "dotenv": "^16.0.1",
+    "octokit": "^2.0.4",
+    "vercel": "^27.3.7"
   }
 }

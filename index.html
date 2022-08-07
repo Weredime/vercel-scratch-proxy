@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scratch proxy</title>
+        <link rel="stylesheet" href="github-markdown.css">
+    </head>
+    <body class="markdown-body">
+        <h1>
+<a id="user-content-vercel-scratch-proxy" class="anchor" href="#vercel-scratch-proxy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>vercel-scratch-proxy</h1>
+<p>A serverless proxy to get information about scratch users, studios and more!</p>
+<h1>
+<a id="user-content-routes" class="anchor" href="#routes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Routes</h1>
+<h2>
+<a id="user-content-djangobb-s2forums" class="anchor" href="#djangobb-s2forums" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DjangoBB (s2forums)</h2>
+<h3>
+<a id="user-content-get-apidjangobbfeed" class="anchor" href="#get-apidjangobbfeed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>GET</code> /api/djangobb/feed</h3>
+<p>Get the feed of a specific forum topic.</p>
+<h4>
+<a id="user-content-query-parameters" class="anchor" href="#query-parameters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Query Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Expected Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>f</td>
+<td>The topic id</td>
+<td><code>Number</code></td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="user-content-scratchr2" class="anchor" href="#scratchr2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>scratchr2</h2>
+<h3>
+<a id="user-content-get-apiscratchr2user" class="anchor" href="#get-apiscratchr2user" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><code>GET</code> /api/scratchr2/user</h3>
+<p>Get a user.</p>
+<h4>
+<a id="user-content-query-parameters-1" class="anchor" href="#query-parameters-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Query Parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Expected Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u</td>
+<td>The username</td>
+<td><code>String</code></td>
+</tr>
+</tbody>
+</table>
+<h2>
+<a id="user-content-developing" class="anchor" href="#developing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developing</h2>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> install</span>
+npm install
+
+<span class="pl-c"><span class="pl-c">#</span> start dev server</span>
+npm run dev</pre></div>
+
+    </body>
+</html>
